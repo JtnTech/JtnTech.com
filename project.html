@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+  <title>JatinX</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      padding: 2rem;
+      color: #f0e8e8;
+    }
+
+    .top-banner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .top-banner img {
+      max-width: 100%;
+      height: 30%;
+      border-radius: 10px;
+      box-shadow: 0 8px 16px rgba(255, 0, 0, 0.4);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .social-icons a {
+      font-size: 1.5rem;
+      color: #ccc;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #f39a15;
+    }
+
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .project-box {
+      background-color: #1e1e1e;
+      padding: 1rem;
+      border-radius: 10px;
+      border: 0.5px solid #4a2020;
+      box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .project-box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .project-box h3 {
+      font-size: 1.2rem;
+      color: #f70a16;
+      margin-top: 0.5rem;
+    }
+
+    .project-box p {
+      color: #aaa;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .project-links a {
+      padding: 0.5rem 1rem;
+      background-color: #00bfff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .project-links a:hover {
+      background-color: #007acc;
+    }
+
+    .yt-section-adjust {
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .yt-section-adjust h2 {
+      text-align: center;
+      font-size: 35px;
+      margin-top: 60px;
+    }
+
+    .yt-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      margin-top: 4rem;
+    }
+
+    .youtube-section {
+      text-align: center;
+    }
+
+    .youtube-section iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      border: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-banner">
+    <h1 style="color: white;">Welcome to My Project Showcase</h1>
+    <p style="color: #aaa;">Explore my work, watch project demos, and connect with me!</p>
+    <div class="social-icons">
+      <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/yourprofile" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:your@email.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+
+  <div class="projects-container">
+    <div class="project-box">
+      <img src="project1.jpg" alt="Project 1">
+      <h3>Project One</h3>
+      <p>A brief description of your project goes here.</p>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </div>
+
+    <div class="project-box">
+      <img src="project2.jpg" alt="Project 2">
+      <h3>Project Two</h3>
+      <p>Another project description with great features.</p>
+      <div class="project-links">
+        <a href="#">Live Demo</a>
+        <a href="#">Source Code</a>
+      </div>
+    </div>
+
+    <!-- Add more project-box divs as needed -->
+  </div>
+  <div class="yt-section-adjust">
+    <h2>Watch My Project Videos</h2>
+
+    <div class="yt-section">
+
+      <div class="youtube-section">
+
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+      </div>
+      <div class="youtube-section">
+
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+      </div>
+      <div class="youtube-section">
+
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="yt-section">
+
+    <div class="youtube-section">
+
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+    </div>
+    <div class="youtube-section">
+
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+    </div>
+    <div class="youtube-section">
+
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+
+</html>
