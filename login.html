@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Login Form</title>
+   <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+   <style>
+    /* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 10px;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body styling */
+body {
+  background: linear-gradient(135deg, #000000, #001f3f, #ff0000);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Login container */
+.login-container {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 0px rgba(255, 0, 0, 0.6),
+              inset 0 0 10px rgba(0, 0, 255, 0.4);
+}
+
+/* Heading */
+.login-container h2 {
+  text-align: center;
+  color: #00aaff;
+  margin-bottom: 20px;
+  /* text-shadow: 0 0 3px #ff0000; */
+}
+
+/* Avatar */
+.imgcontainer {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  border: 3px solid #00aaff;
+  box-shadow: 0 0 5px #ff0000;
+}
+
+/* Input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 20px 0;
+  display: inline-block;
+  border: 1px solid #00aaff;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  border-color: #ff0000;
+  box-shadow: 0 0 10px #ff0000;
+}
+
+/* Buttons */
+button {
+  background-color: #ff0000;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #001f3f;
+  box-shadow: 0 0 5px #00aaff;
+}
+
+.cancelbtn {
+  background-color: #001f3f;
+}
+
+.cancelbtn:hover {
+  background-color: #ff0000;
+}
+
+/* Remember checkbox and text */
+.container label {
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Bottom container */
+.container:last-child {
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+/* Forgot password */
+.psw a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.psw a:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media screen and (max-width: 500px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .avatar {
+    width: 80px;
+  }
+
+  button {
+    padding: 12px;
+  }
+}
+
+   </style>
+</head>
+<body>
+   <div class="login-container">
+       <h2>LogIn</h2>
+       <form action="action_page.php" method="post">
+           <div class="imgcontainer">
+               <img src="img_avatar2.png" alt="Avatar" class="avatar">
+           </div>
+           <div class="container">
+               <label for="uname"><b>Username</b></label>
+               <input type="text" placeholder="Enter Username" name="uname" required>
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" required>
+               <button type="submit">LogIn</button>
+               <label>
+                   <input type="checkbox" checked="checked" name="remember"> Remember me
+               </label>
+           </div>
+           <div class="container" style="background-color:#f1f1f1">
+               <button type="button" class="cancelbtn">Cancel</button>
+               <span class="psw">Forgot <a href="#">password?</a></span>
+           </div>
+       </form>
+   </div>
+</body>
+</html>

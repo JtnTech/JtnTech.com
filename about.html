@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - StudySync</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e2b2b;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #3f3f4d;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background-color: #82a7ec;
+      /* filter: blur(2px red); */
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .feature-card {
+      background-color: #eee8e8;
+      border-left: 4px solid #3f16163b;
+      padding: 1rem;
+      border-radius: 6px;
+      transition: transform 0.3s;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-card i {
+      font-size: 1.5rem;
+      color: #922222;
+      margin-right: 10px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #0047ab;
+      color: white;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #002f6c;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #010b40;
+      color: white;
+      margin-top: 3rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>About JatinX</h1>
+    <p>Your one-stop platform for interactive and personalized learning</p>
+  </header>
+
+  <div class="container">
+    <h2>Who We Are</h2>
+    <p>JatinX is an innovative e-learning platform designed to enhance your knowledge with modern tools and intuitive experiences. Our mission is to provide quality education accessible to everyone, anytime, anywhere.</p>
+
+    <h2>Our Features</h2>
+    <div class="features">
+      <div class="feature-card">
+        <i class="fa-solid fa-book-open-reader"></i> 
+        <strong>Interactive Courses</strong>
+        <p>Engage with courses created by experts in every field.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <strong>Progress Tracking</strong>
+        <p>Monitor your learning journey and achievements easily.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-user-group"></i>
+        <strong>Community Forums</strong>
+        <p>Discuss topics and get help from peers and mentors.</p>
+      </div>
+      <div class="feature-card">
+        <i class="fa-solid fa-cloud-arrow-down"></i>
+        <strong>Offline Access</strong>
+        <p>Download materials and study without internet access.</p>
+      </div>
+    </div>
+
+    <h2>Quick Actions</h2>
+    <div class="buttons">
+      <a href="#contact" target="_blank" class="btn"><i class="fa-solid fa-envelope"></i> Contact Us</a>
+      <a href="#faq" target="_blank" class="btn"><i class="fa-solid fa-question"></i> FAQ</a>
+      <a href="#team" target="_blank" class="btn"><i class="fa-solid fa-users"></i> Meet the Team</a>
+      <a href="#terms" target="_blank" class="btn"><i class="fa-solid fa-file-contract"></i> Terms & Policies</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 JatinX. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
